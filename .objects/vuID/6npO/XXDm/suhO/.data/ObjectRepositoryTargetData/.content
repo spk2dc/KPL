@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rSWV4zVx_EiycKHSbiqHUQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" DesignTimeRectangle="116, 666, 1686, 71" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT WebFormItem_37_0'" FullSelectorArgument="&lt;webctrl tag='INPUT' name='webFormItem_37' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' name='webFormItem_37' type='text' /&gt;" Guid="0b29b4bd-854e-4925-8b56-48e5bde373ef" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="146, 637, 108, 29" ElementType="Text" FriendlyName="'Your Name *'" FullSelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='Your Name *' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='Your Name *' check:text='Your Name&amp;#xA;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;*' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="cd28d12f01ba78182c60b09901af9a77.png" xmlns="">0xlw2IXc3DECGeB4CQoSekw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

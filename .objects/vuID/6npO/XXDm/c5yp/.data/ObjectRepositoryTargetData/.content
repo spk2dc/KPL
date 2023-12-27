@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LmnrwTN71kCNP0IPteEcUQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" DesignTimeRectangle="116, 626, 1686, 71" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'Select a value'" FullSelectorArgument="&lt;webctrl tag='SELECT' name='webFormItem_39' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' name='webFormItem_39' /&gt;" Guid="b18f5029-daee-44ff-a0ed-8a370ac81de6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="146, 597, 376, 29" ElementType="Text" FriendlyName="'The item'" FullSelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='The item I am suggesting for purchase is a *' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='The item I am suggesting for purchase is a *' check:text='The item I am suggesting for purchase is a&amp;#xA;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;*' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5c188efc5c7f46fd1acff31cff08cf39.png" xmlns="">0cdRSnTeC-E-PM7W27Up92w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

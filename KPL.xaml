@@ -1,0 +1,302 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="KPL" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="list" Type="InArgument(s:String[])" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>848,3658.4</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>KPL_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="KPL" sap:VirtualizedContainerService.HintSize="622.4,3593.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="title" />
+      <Variable x:TypeArguments="x:String" Name="author" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="560,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;KPL list(0): &quot;+list(0)]" />
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="560,3299.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[list]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526.4,3111.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="483.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[title]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(0)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="483.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[author]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(1).Split(" - ")(0)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="suggest" sap:VirtualizedContainerService.HintSize="483.2,1720.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="2ebee171-3e98-4e7b-b1fe-d59dafbefcef" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1504" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="2ebee171-3e98-4e7b-b1fe-d59dafbefcef" Text="Senthil Kannan" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" ContentHash="rSWV4zVx_EiycKHSbiqHUQ" DesignTimeRectangle="116, 666, 1686, 71" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'name'" FullSelectorArgument="&lt;webctrl tag='INPUT' name='webFormItem_37' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' name='webFormItem_37' type='text' /&gt;" Guid="0b29b4bd-854e-4925-8b56-48e5bde373ef" InformativeScreenshot="cd28d12f01ba78182c60b09901af9a77.png" IsResponsive="True" Reference="72Sd4J_uX0ihJmAVpTVYVg/suhOI6k3dUWHFeVDqTqm7Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="146, 637, 108, 29" ElementType="Text" FriendlyName="'name'" FullSelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='Your Name *' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='Your Name *' check:text='Your Name&amp;#xA;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;*' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'card'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" Text="29098007098925" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" ContentHash="t8DR7tk9Qkat9LQVBvUKqA" DesignTimeRectangle="116, 687, 1686, 71" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'card'" FullSelectorArgument="&lt;webctrl tag='INPUT' name='webFormItem_38' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' name='webFormItem_38' type='text' /&gt;" Guid="220f40f3-97b5-4d6c-be80-a937bc60f4e0" InformativeScreenshot="8131b581903aee9e68aacf4beeb99370.png" IsResponsive="True" Reference="72Sd4J_uX0ihJmAVpTVYVg/WBzFsRPgekKvA4YdlNGDmA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="146, 659, 192, 29" ElementType="Text" FriendlyName="'card'" FullSelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='Library card number *' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='Library card number *' check:text='Library card number&amp;#xA;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;*' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NSelectItem DisplayName="Select Item 'format'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="e-Audiobook" Version="V3">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="6">
+                          <x:String>Book</x:String>
+                          <x:String>eBook</x:String>
+                          <x:String>eAudiobook</x:String>
+                          <x:String>CD Audiobook</x:String>
+                          <x:String>DVD</x:String>
+                          <x:String>Large Print</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" ContentHash="LmnrwTN71kCNP0IPteEcUQ" DesignTimeRectangle="116, 626, 1686, 71" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'format'" FullSelectorArgument="&lt;webctrl tag='SELECT' name='webFormItem_39' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' name='webFormItem_39' /&gt;" Guid="b18f5029-daee-44ff-a0ed-8a370ac81de6" InformativeScreenshot="5c188efc5c7f46fd1acff31cff08cf39.png" Reference="72Sd4J_uX0ihJmAVpTVYVg/c5ypWGbz7Eqpnz8uBNJA6A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="146, 597, 376, 29" ElementType="Text" FriendlyName="'format'" FullSelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='The item I am suggesting for purchase is a *' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='The item I am suggesting for purchase is a *' check:text='The item I am suggesting for purchase is a&amp;#xA;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;*' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[title]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" ContentHash="4J6PRQ8WAUqsNY2-hhVDew" DesignTimeRectangle="116, 734, 1686, 71" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl tag='INPUT' name='webFormItem_40' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' name='webFormItem_40' type='text' /&gt;" Guid="a5336551-f07b-4e31-bcbe-a17d3ab9b1b6" InformativeScreenshot="02d46900a30bb8f88df3deb4601e5a21.png" IsResponsive="True" Reference="72Sd4J_uX0ihJmAVpTVYVg/BdaZcm4_j0CNrVDIzEunjQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="146, 705, 53, 29" ElementType="Text" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='Title *' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='Title *' check:text='Title&amp;#xA;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;*' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'author'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[author]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" ContentHash="_yHwbp5CQEiZsQYN2QLFeQ" DesignTimeRectangle="116, 860, 1686, 71" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'author'" FullSelectorArgument="&lt;webctrl tag='INPUT' name='webFormItem_41' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' name='webFormItem_41' type='text' /&gt;" Guid="bf4a331d-c687-4d40-8ce6-872f1c559849" InformativeScreenshot="4e2359c8bfbddc1e98dbba82e81b0824.png" IsResponsive="True" Reference="72Sd4J_uX0ihJmAVpTVYVg/bT3bNwhCgESknvkuYvx_qg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="146, 832, 60, 29" ElementType="Text" FriendlyName="'author'" FullSelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='Author' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' visibleinnertext='Author' check:text='Author' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'submit'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" ContentHash="irjdHqCUb0-yC1YT6gRxZg" DesignTimeRectangle="116, 823, 155, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'submit'" FullSelectorArgument="&lt;webctrl tag='BUTTON' innertext='Submit' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' innertext='Submit' type='button' check:text='Submit' /&gt;" Guid="eab0f090-d8f2-4539-8cbb-8ec75fa700af" InformativeScreenshot="95a132b6c1310e39b6f99f3833bab65c.png" Reference="72Sd4J_uX0ihJmAVpTVYVg/y_6AsjsiRkC0a6NkvZx3aw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="iaNIFdH3r0aq0Ok-BeTWXQ" IconBase64="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" InformativeScreenshot="167a8025bb739a5aa3fe032e5d8805dd.jpg" Reference="72Sd4J_uX0ihJmAVpTVYVg/XXDmbHO0KE6V6oN5uHqj6g" Selector="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" Title="Suggest for Purchase - Kitchener Public Library" Url="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="confirmation" sap:VirtualizedContainerService.HintSize="483.2,488" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="82b70f17-9ecb-4b2d-a0e5-ecbc9a593372" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,271.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ok'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="82b70f17-9ecb-4b2d-a0e5-ecbc9a593372" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" ContentHash="eny9Gq7k-Eq6jVlhWidv4A" DesignTimeRectangle="950, 759, 95, 49" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'ok'" FullSelectorArgument="&lt;webctrl tag='BUTTON' innertext='Ok' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' innertext='Ok' check:text='Ok' /&gt;" Guid="83717a05-0622-45cd-9808-c10b4690a4b3" InformativeScreenshot="78a2b19f1eb05948d8eca0d1bda09964.png" Reference="72Sd4J_uX0ihJmAVpTVYVg/naCQS-_2B06MHwuN7lRodQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="2ST1lNPSAUiUkOrHp8KTxg" IconBase64="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" InformativeScreenshot="1c7bacc9e0339329802b6ad3e51f1622.jpg" Reference="72Sd4J_uX0ihJmAVpTVYVg/NDuE0jShX0ODpogdhWjMfA" Selector="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" Title="Suggest for Purchase - Kitchener Public Library" Url="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="another site" sap:VirtualizedContainerService.HintSize="483.2,489.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="159065ab-ac6f-4d50-97d2-3b6e0f4213d8" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,272.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'another'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="159065ab-ac6f-4d50-97d2-3b6e0f4213d8" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" ContentHash="_IC2xX_V60q0vEXBs7bmkQ" DesignTimeRectangle="84, 592, 366, 58" DesignTimeScaleFactor="1.25" FriendlyName="'another'" FullSelectorArgument="&lt;webctrl tag='SPAN' class='button-primary' innertext='Make another suggestion' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' class='button-primary' innertext='Make another suggestion' check:text='Make another suggestion' /&gt;" Guid="de90749b-1035-4e83-9fd1-a6a16fe6741f" InformativeScreenshot="b19842d9defe0007e1ea1b3adcf307d3.png" Reference="72Sd4J_uX0ihJmAVpTVYVg/svtuYMgpVkqF_C3X1E4-9Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="113, 607, 307, 28" ElementType="Text" FriendlyName="'another'" FullSelectorArgument="&lt;webctrl tag='A' innertext='Make another suggestion' parentclass='button-primary' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' innertext='Make another suggestion' parentclass='button-primary' check:text='Make another suggestion' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="lD3qmDDALEasd5ct04L20Q" IconBase64="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" InformativeScreenshot="116dd9ae7f8d598593734e14c78d489d.jpg" Reference="72Sd4J_uX0ihJmAVpTVYVg/oBVFmAX3kEyjUpxgB344gA" Selector="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" Title="Suggest for Purchase - Kitchener Public Library" Url="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_IC2xX_V60q0vEXBs7bmkQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" DesignTimeRectangle="84, 592, 366, 58" DesignTimeScaleFactor="1.25" FriendlyName="'Make another suggestion'" FullSelectorArgument="&lt;webctrl tag='SPAN' class='button-primary' innertext='Make another suggestion' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' class='button-primary' innertext='Make another suggestion' check:text='Make another suggestion' /&gt;" Guid="de90749b-1035-4e83-9fd1-a6a16fe6741f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="113, 607, 307, 28" ElementType="Text" FriendlyName="'Make another suggestion'" FullSelectorArgument="&lt;webctrl tag='A' innertext='Make another suggestion' parentclass='button-primary' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' innertext='Make another suggestion' parentclass='button-primary' check:text='Make another suggestion' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b19842d9defe0007e1ea1b3adcf307d3.png" xmlns="">0Fcg_iTkFhUm0ns6zHBZPzw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

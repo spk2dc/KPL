@@ -1,0 +1,16 @@
+﻿{
+  "Name": "ok",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "naCQS-_2B06MHwuN7lRodQ",
+  "Reference": "72Sd4J_uX0ihJmAVpTVYVg/naCQS-_2B06MHwuN7lRodQ",
+  "ParentRef": "72Sd4J_uX0ihJmAVpTVYVg/NDuE0jShX0ODpogdhWjMfA",
+  "Created": "2023-12-27T19:35:45.907355Z",
+  "Updated": "2023-12-27T19:36:56.0078779Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="eny9Gq7k-Eq6jVlhWidv4A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.kpl.org/things-to-check-out/cant-find-it/suggest-for-purchase" DesignTimeRectangle="950, 759, 95, 49" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Ok'" FullSelectorArgument="&lt;webctrl tag='BUTTON' innertext='Ok' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' innertext='Ok' check:text='Ok' /&gt;" Guid="83717a05-0622-45cd-9808-c10b4690a4b3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest for Purchase - Kitchener Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="78a2b19f1eb05948d8eca0d1bda09964.png" xmlns="">0R1LUtFAnEUSLznTx2pVxAg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
